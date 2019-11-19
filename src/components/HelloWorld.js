@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
-class HelloWorld extends Component {
+class Meow extends Component {
   render() {
-    return <h1>Hello, World!</h1>
+    return <h1>Meow!</h1>
   }
 }
 
-export default HelloWorld
+export default Meow

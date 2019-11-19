@@ -9,4 +9,82 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: #fafbfc;
+  /* background-color: #111; */
+
+  color: #586069;
+}
+
+header {
+  width: 100;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  /* background-clip: padding-box; */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.05); */
+  -webkit-backdrop-filter: blur(15px);
+}
+a {
+  text-decoration: none;
+  color: #586069;
+  padding: 1rem;
+}
+
+.top-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.octocatIcon {
+  font-size: 2rem;
+}
+
+.top-nav section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.octo-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.octo-image {
+  border-radius: 9px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ddd;
+  background-color: #fff;
+  /* object-fit: cover; */
+  max-height: 400px;
+  /* width: auto; */
+  padding: 0;
+}
+
+.octo-info {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+}
+
+.octo-info-left {
+  display: flex;
+}
+.octo-info-right {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .hide-git-hub {
+    display: none;
+  }
 }

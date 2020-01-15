@@ -5,9 +5,11 @@ import filmtocatsImage from './images/filmtocats.png'
 import FintechtocatImage from './images/Fintechtocat.png'
 import SentrytocatImage from './images/Sentrytocat_octodex.jpg'
 import puddleJumperImage from './images/puddle_jumper_octod.jpg'
+import OctoCardInsert from './components/OctoCardInsert'
 import OctoImageInsert from './components/OctoImageInsert'
 import OctoInfoInsert from './components/OctoInfoInsert'
 const App = () => {
+  let catCardInfo = { src: boxertocatImage, url: 'https://octodex.github.com/' }
   return (
     <>
       <header>
@@ -117,6 +119,16 @@ const App = () => {
             />
           </section>
         </section>
+        {/* Use this component call for populating from an array */}
+        <OctoCardInsert
+          src={FintechtocatImage}
+          url="https://google.com/"
+          alt="Fintechtocat"
+          imageNumber="#737"
+          cardUrl="https://google.com/"
+          imageName="Fintechtocat"
+          profileUrl="https://google.com"
+        />
       </main>
       <footer>
         <p>© 2013 – 2019 GitHub, Inc. All rights reserved.</p>
